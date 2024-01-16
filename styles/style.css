@@ -1,0 +1,143 @@
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Mulish:wght@400;700;800&display=swap');
+
+ :root{
+    --primary-heading-black: #131318;
+    --primary-text-gray: #5A5A5D;
+    --secondary-btn-color-orange: #FF5400;
+    --primary-font-family: Mulish;
+     }
+
+ body{
+    margin: 0;
+    padding: 0;
+ }
+
+ /* Nav styles */
+ header{
+   max-width: 80%;
+   margin: 20px 50px;
+ }
+ nav{
+   max-width: 80%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-bottom: 50px;
+    }
+ .nav-head{
+   display: flex;
+ }
+ nav h3{
+      color: var(--primary-heading-black);
+      font-family: var(--primary-font-family);
+      font-size: 2rem;
+      font-weight: 800;
+ }
+ .nav-link a{
+   text-decoration: none;
+   color: var( --primary-text-gray);
+   text-align: center;
+   font-family: var(--primary-font-family);
+   font-size: 1rem;
+   font-weight: 400;
+   padding-left: 40px;
+ }
+ nav span {
+    color: var( --secondary-btn-color-orange) ;
+ }
+
+ /* Banner styles */
+.banner-container{
+   height: 500px;
+   background-image: url(../Images/Banner.png);
+   background-blend-mode: darken;
+  }
+.banner-form{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   align-items: center;
+   margin: 30px auto;  
+   padding: 10px 0px;
+   border-radius: 8px;
+   background: rgba(255, 255, 255, 0.30);
+}
+.banner-content{
+   margin:auto ;
+   width: 670px;
+   text-align: center;
+}
+.banner-content h1{
+   color: #FFF;
+   font-family: var(--primary-font-family);
+   font-size: 3.5rem;
+   font-weight: 800;
+}
+.banner-content p{
+   color: #FFF;
+   text-align: center;
+      font-family: var(--primary-font-family);
+   font-size: 0.9rem;
+   font-weight: 400;
+}
+.banner{
+   padding: 100px;
+}
+.banner-form input{
+    width: 130px;
+    height: 20px; 
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+/* .input{
+   gap: 20px;
+} */
+.form-button{
+   width: 130px;
+   color: #FFF;
+   text-align: center;
+   font-family: var(--primary-font-family);
+   font-size: 0.9rem;
+   font-weight: 700;
+   border: none;
+   border-radius: 5px;
+   padding: 10px;
+   background-color: var(--secondary-btn-color-orange);
+  }
+
+
+
+
+
+
+
+  @media screen and (max-width: 600px) {
+   nav{
+       max-width: 100%;
+       flex-direction: column;
+       justify-content: center;
+          }
+   .nav-link a {
+      padding-left: 10px;
+   }
+   .banner-container{
+      max-width: 100%;
+      background-size: 100% 500px;
+      background-repeat: no-repeat;
+    }
+   .banner-form {
+      max-width: 50%;
+      margin: 30px auto;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+           
+   }
+   .banner-content {
+      max-width: 100%;
+   }
+   .banner{
+      padding: 0px;
+   }
+}
