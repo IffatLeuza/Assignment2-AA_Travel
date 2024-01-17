@@ -6,6 +6,9 @@
     <title>AA Travel</title>
     <link rel="icon" href="Images/travel-website-fev.png"> <!--fevIcon-->
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awesome cdn -->
+
     <link rel="stylesheet" href="styles/style.css"> <!--Css styles-->
     <link rel="stylesheet" href="styles/media-query.css"> <!--Media query styles-->
 </head>
@@ -135,12 +138,48 @@
         <section></section>
 
         <!-- news letter -->
-        <section></section>
+        <section class="news-container">
+            <div class="news-content">
+                <div>
+                    <h3>Newsletter</h3>
+                    <p>Get your daily dose of travel news & tips. Sign up today!</p>
+                </div>
+                <hr>
+                <div class="news-input">
+                    <input type="text" placeholder="Enter your name">
+                    <input type="email" placeholder="Enter your email">
+                    <button id="newsletter-btn" class="orange-button">Subscribe</button>
+                </div>
+            </div>
+
+            <div>
+                <div class="news-img">
+                    <img src="./Images/Rectangle 8 (1).png" alt="">
+                </div>
+                <div></div>
+            </div>
+        </section>
 
     </main>
 
     <footer>
+      <div class="footer-container">
+            <div class="nav-head footer-head" >
+                <img src="./Images/Group 40071 (2).png" alt="AA Travel logo">
+                <h3>AA <span>Travel</span></h3> <!--logo-->
+            </div>
 
+            <p>Discover new horizons, create lasting memories. Your adventure starts here. Explore, dream, and travel with AA Travel.</p>
+
+            <div class="footer-icons">
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-github"></i>
+            </div>
+        <hr>
+        <p class="allright-text">2017, All Rights Reserved</p>
+    </div>
     </footer>
     
 </body>
