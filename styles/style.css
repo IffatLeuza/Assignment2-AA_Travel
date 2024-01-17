@@ -17,20 +17,22 @@
    font-size: 0.9rem;
    font-weight: 400;
 }
- /* Nav styles */
+ 
   header, 
  .nav-container, 
  .destination-container,
  .popular-tour, 
  .destination-container, 
  .news-container,
- .why-choose-container
+ .why-choose-container,
+ .recomendation
  {
    max-width: 80%;
    margin: 20px 50px;
  }
+
+ /* Nav styles */
  .nav-container{
-   /* max-width: 80%; */
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -236,7 +238,7 @@
 .why-choose-content2, 
 .why-choose-content3, 
 .why-choose-content4{
-   ma-width: 500px;
+   max-width: 500px;
    height: 250px;
    border-radius: 10px;
    border: 1px solid rgba(251, 181, 99, 0.20);
@@ -258,8 +260,33 @@
    max-width: 50%;
    margin: auto;
 }
+/* Recommendation for you styles */
+.recomendation h3{
+   color: var(--primary-heading-black);
+   text-align: center;
+   font-family: var(--primary-font-family);
+   font-size: 1.6rem;
+   font-weight: 800;
+   padding: 20px;
+}
 
-
+.recom-content1 img, 
+.recom-content2 img, 
+.recom-content3 img
+{
+   width: 100%;
+   max-height: 300px;
+   border-radius: 10px;
+   border: 1px solid rgba(24, 98, 155, 0.2);
+   background: rgba(118, 245, 209, 0.05);
+   /* padding: 40px; */
+}
+.recom-container{
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   gap: 10px;
+}
 
 /* Newsletter styles */
 .news-img img{
@@ -282,7 +309,9 @@
    margin-top: 50px;
 }
 .news-content h3,
-.why-choose-container h4{
+.why-choose-container h4,
+.recom-container h4
+{
 color: var(--primary-heading-black);
 font-family: var(--primary-font-family);
 font-size: 1.3rem;
@@ -341,7 +370,8 @@ hr{
    nav, 
    .popular-tour,
    .news-container,
-   .why-choose-flex
+   .why-choose-flex,
+   .recom-container
    {
        max-width: 100%;
        flex-direction: column;
@@ -377,7 +407,6 @@ hr{
      height: auto;   
    }
     .popular-tour img{
-      /* padding-left: 20px; */
       width: 100%;
       padding: 0px;
    }
